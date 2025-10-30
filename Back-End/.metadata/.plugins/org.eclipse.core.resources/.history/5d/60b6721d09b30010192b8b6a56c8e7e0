@@ -1,0 +1,71 @@
+package com.backend.chapterVerse.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Book {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+	@Column(nullable = false)
+	private String author;
+	@Column(nullable = false)
+	private String title;
+	@Column(nullable = false)
+	private String image;
+	@Column(nullable = false)
+	private double prize;
+	
+	public Book() {
+		super();
+	}
+
+	public Book(String author, String title, String image, double prize) {
+		super();
+		this.author = author;
+		this.title = title;
+		this.image = image;
+		this.prize = prize;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public double getPrize() {
+		return prize;
+	}
+
+	public void setPrize(double prize) {
+		this.prize = prize;
+	}
+	
+}

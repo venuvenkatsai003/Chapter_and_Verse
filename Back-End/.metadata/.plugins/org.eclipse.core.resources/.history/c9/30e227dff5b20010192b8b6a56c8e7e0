@@ -1,0 +1,5 @@
+package com.backend.chapterVerse.entity;
+
+public class Book {
+
+}

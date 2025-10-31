@@ -1,0 +1,5 @@
+package com.backend.chapterVerse.repository;
+
+public interface UserRepository {
+
+}
